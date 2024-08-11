@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "fb3fbcef-ec75-4077-9564-1fd6aaa45a08",
+		"name": "Unicomer Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8978099",
+		"_collection_link": "https://pisto-dev.postman.co/workspace/Team-Workspace~061e0e35-e517-4694-8781-1d9f794353a4/collection/8978099-fb3fbcef-ec75-4077-9564-1fd6aaa45a08?action=share&source=collection_link&creator=8978099"
+	},
+	"item": [
+		{
+			"name": "Get Holidays",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/holidays",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"holidays"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Holidays xml",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/holidays",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"holidays"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Holidays with filter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/holidays?type=Civil&start_date=2024-01-01&end_date=2024-09-19",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"holidays"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "Civil"
+						},
+						{
+							"key": "start_date",
+							"value": "2024-01-01"
+						},
+						{
+							"key": "end_date",
+							"value": "2024-09-19"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Holidays with filter xml",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/holidays?type=Civil&start_date=2024-10-12",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"holidays"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "Civil"
+						},
+						{
+							"key": "start_date",
+							"value": "2024-10-12"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
